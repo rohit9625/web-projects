@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting Page</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    .redirect-message {
+      text-align: center;
+    }
+    .redirect-message h1 {
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="redirect-message">
+    <h1>Redirecting to Home Page...</h1>
+  </div>
+
+  <script>
+    // Redirect after a certain duration (in milliseconds)
+    const redirectDuration = 3000; // 3 seconds
+
+    setTimeout(() => {
+      window.location.href = 'index.html'; // Replace 'home.html' with your actual home page URL
+    }, redirectDuration);
+  </script>
+</body>
+</html>
