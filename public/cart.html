@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Bag</title>
+    <link rel="stylesheet" href="./scr/style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="./Images/mainLogo.png" alt="">
+        </div>
+        <ul id="navbar">
+            <li><a class="nav-link" href="index.html"></i>Home</a></li>
+            <li><a class="nav-link" href="plants.html">Plants</a></li>
+            <li><a class="nav-link" href="cakes.html">Cakes</a></li>
+            <li><a class="nav-link" href="chocolates.html">Chocolates</a></li>
+            <i id="close" class="bi bi-x-circle-fill"></i>
+        </ul>
+        <div class="top-left">
+            <div class="cart-logo">
+                <a id="bag" href="cart.html"><i class="bi bi-cart-fill nav-link" style="font-size: 25px"></i></a>
+                <span id="quantity">0</span>
+            </div>
+            <i id="bar" class="bi bi-list-ul" style="font-size: 25px;"></i>
+        </div>
+    </header>
+
+    <div class="cart" id="blur">
+        <table id="head">
+            <thead>
+                <tr class="head">
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+        </table>
+        <table id="cart">
+        </table>
+        <div id="final-price">
+            <table>
+                <tbody>
+                    <tr id="delivery-charge">
+                        <td>Delivery Charge</td>
+                        <td>Rs. 50</td>
+                    </tr>
+                    <tr id="total-price">
+                    </tr>
+                </tbody>
+            </table>
+            <button id="checkout-btn" type="button">Checkout</button>
+        </div>
+    </div>
+    <div class="checkout-data" id="checkout">
+        <div class="form">
+            <h2>Checkout Form</h2>
+            <form id="checkoutForm">
+              <div class="form-group">
+                <label for="name">Name: </label>
+                <input type="text" id="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email: </label>
+                <input type="email" id="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone: </label>
+                <input type="number" id="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="address">Address: </label>
+                <textarea name="address" id="address" cols="30" rows="10"></textarea>
+              </div>
+              <button id="proceed-btn" type="submit">Place Order</button>
+            </form>
+        </div>
+    </div>
+    
+    
+
+    <!-- <div id="empty-cart">
+        <i id="sad-face" class="bi bi-emoji-frown"></i>
+        <h2>Your Bag is Empty</h2>
+        <a href="./index.html">To back to home</a>
+    </div> -->
+
+    <!-- Javascript -->
+    <script src="./scr/data.js"></script>
+    <script src="./scr/cart.js"></script>
+    <!-- <script src="./scr/main.js"></script> -->
+</body>
+</html>
